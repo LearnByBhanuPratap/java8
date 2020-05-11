@@ -1,6 +1,5 @@
 package biPredicate1;
 
-import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 
 /**

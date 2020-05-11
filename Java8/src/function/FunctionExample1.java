@@ -1,8 +1,6 @@
 package function;
 
 import java.util.function.Function;
-import java.util.function.LongFunction;
-import java.util.function.LongToDoubleFunction;
 import java.util.function.LongToIntFunction;
 import java.util.function.ToDoubleBiFunction;
 import java.util.function.ToDoubleFunction;

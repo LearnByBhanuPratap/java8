@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import java8.ForEachExample;
-
 public class Example5 {
 
 	static Consumer<Person> ageConsumer = person -> {
