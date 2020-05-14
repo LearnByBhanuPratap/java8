@@ -1,4 +1,4 @@
-package lambda1;
+package lambda;
 
 public class Example2 {
 

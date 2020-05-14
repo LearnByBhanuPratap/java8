@@ -1,4 +1,4 @@
-package lambda1;
+package lambda;
 
 @FunctionalInterface
 public interface FIExample {

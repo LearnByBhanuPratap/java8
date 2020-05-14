@@ -1,4 +1,4 @@
-package consumer1;
+package consumer;
 
 import java.util.ArrayList;
 import java.util.List;

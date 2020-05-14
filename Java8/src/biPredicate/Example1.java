@@ -1,4 +1,4 @@
-package biPredicate1;
+package biPredicate;
 
 import java.util.function.BiPredicate;
 
@@ -19,7 +19,7 @@ public class Example1 {
 	public static void main(String[] args) {
 		System.out.println(biPredicate.test("hellojava8", 10));
 		System.out.println(biPredicate.test("hellojava8", 9));
-		
+
 	}
 
 }

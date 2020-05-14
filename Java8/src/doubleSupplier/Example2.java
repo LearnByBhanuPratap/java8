@@ -2,40 +2,45 @@ package doubleSupplier;
 
 import java.util.Random;
 import java.util.function.DoubleSupplier;
-/**
- * https://www.youtube.com/user/MrBhanupratap29/playlists?
- * https://www.udemy.com/javabybhanu
- * https://www.facebook.com/learnbybhanupratap/
- * 
- * @author Bhanu Pratap Singh
- *
- */
+import java.util.function.IntSupplier;
+import java.util.function.LongSupplier;
+
 public class Example2 {
 
 	public static void main(String[] args) {
-		
-		Example2 example2 = new Example2();
 
 		Random random = new Random();
-		
+
 		DoubleSupplier doubleSupplier = random::nextDouble;
 
-		DoubleSupplier doubleSupplier1 = Example2::getDouble1;
+		DoubleSupplier doubleSupplier1 = Example2::getDOuble;
 
-		DoubleSupplier doubleSupplier2 = example2::getDouble2;
+		Example2 example2 = new Example2();
+
+		DoubleSupplier doubleSupplier2 = example2::getDOuble1;
 
 		System.out.println(doubleSupplier.getAsDouble());
 
-		System.out.println(doubleSupplier1.getAsDouble());
+		LongSupplier longSupplier = () -> 900;
 
-		System.out.println(doubleSupplier2.getAsDouble());
+		IntSupplier intSupplier = () -> 900;
+
+		IntSupplier intSupplier1 = example2::getInt;
+
+		// intSupplier;
+
 	}
 
-	static double getDouble1() {
-		return 19.78;
+	static double getDOuble() {
+		return 19.89;
 	}
 
-	double getDouble2() {
-		return 19.78;
+	double getDOuble1() {
+		return 19.89;
 	}
+
+	int getInt() {
+		return 19;
+	}
+
 }

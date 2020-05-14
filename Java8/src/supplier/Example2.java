@@ -1,7 +1,6 @@
 package supplier;
 
 import java.util.Random;
-import java.util.function.DoubleSupplier;
 import java.util.function.Supplier;
 /**
  * https://www.youtube.com/user/MrBhanupratap29/playlists?
