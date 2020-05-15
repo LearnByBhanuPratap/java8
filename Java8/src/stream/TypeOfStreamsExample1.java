@@ -5,6 +5,7 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
+
 public class TypeOfStreamsExample1 {
 
 	public static void main(String[] args) {
@@ -24,6 +25,10 @@ public class TypeOfStreamsExample1 {
 		Stream<String[]> stream2 = Stream.of(new String[][] { { "test1" }, { "test2" } });
 
 		Stream<String[]> stream3 = Stream.of(new String[][] { { "A", "Apple" }, { "M", "Mango" }, { "B", "Banana" } });
+		
+		String s1 = " ";
+		
+
 
 	}
 
