@@ -1,8 +1,10 @@
-package streamMethods;
+package streamMethods.allMatch1;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
+
+import streamMethods.Student;
 
 public class AllMatchAnyMatchMethodExample1 {
 

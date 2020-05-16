@@ -1,4 +1,4 @@
-package streamMethods;
+package streamMethods.concat31;
 
 import java.util.stream.Stream;
 

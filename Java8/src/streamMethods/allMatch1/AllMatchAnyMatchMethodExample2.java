@@ -1,7 +1,9 @@
-package streamMethods;
+package streamMethods.allMatch1;
 
 import java.util.List;
 import java.util.function.Predicate;
+
+import streamMethods.Student;
 
 public class AllMatchAnyMatchMethodExample2 {
 

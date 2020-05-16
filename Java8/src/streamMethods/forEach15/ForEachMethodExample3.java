@@ -1,8 +1,10 @@
-package streamMethods;
+package streamMethods.forEach15;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
+
+import streamMethods.Student;
 
 public class ForEachMethodExample3 {
 

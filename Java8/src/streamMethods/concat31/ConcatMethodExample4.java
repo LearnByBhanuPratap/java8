@@ -1,6 +1,8 @@
-package streamMethods;
+package streamMethods.concat31;
 
 import java.util.stream.Stream;
+
+import streamMethods.Student;
 
 public class ConcatMethodExample4 {
 

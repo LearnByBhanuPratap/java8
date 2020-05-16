@@ -1,9 +1,11 @@
-package streamMethods;
+package streamMethods.sorted27;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import streamMethods.Student;
 
 public class SortedMethodExample1 {
 
@@ -15,11 +17,15 @@ public class SortedMethodExample1 {
 
 		sorted.forEach(x -> System.out.println(x));
 
+		// get list of Students
 		List<Student> li1 = Student.getListOfStudents();
 
-		//Stream<Student> sorted1 = li1.stream().sorted();
+		// this code will throw exception because we can't sort custom object
+		// custom object should be of type comparable or Comparator
+		
+		Stream<Student> sorted1 = li1.stream().sorted();
 
-		//sorted1.forEach(a -> System.out.println(a.getAge()));
+		sorted1.forEach(a -> System.out.println(a.getAge()));
 		
 		
 		System.out.println("--------------");

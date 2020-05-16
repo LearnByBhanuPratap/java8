@@ -1,8 +1,10 @@
-package streamMethods;
+package streamMethods.forEach15;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
+
+import streamMethods.Student;
 
 public class ForEachMethodExample4 {
 

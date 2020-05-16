@@ -1,4 +1,4 @@
-package streamMethods;
+package streamMethods.forEach15;
 
 import java.util.ArrayList;
 import java.util.List;

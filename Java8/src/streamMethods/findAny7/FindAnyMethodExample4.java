@@ -1,4 +1,4 @@
-package streamMethods;
+package streamMethods.findAny7;
 
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;

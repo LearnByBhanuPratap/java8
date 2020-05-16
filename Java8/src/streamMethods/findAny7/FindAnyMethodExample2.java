@@ -1,4 +1,4 @@
-package streamMethods;
+package streamMethods.findAny7;
 
 import java.util.ArrayList;
 import java.util.Arrays;
