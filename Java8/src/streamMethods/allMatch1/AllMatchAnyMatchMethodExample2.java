@@ -2,9 +2,18 @@ package streamMethods.allMatch1;
 
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import streamMethods.Student;
 
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class AllMatchAnyMatchMethodExample2 {
 
 	static Predicate<Student> predicate = s -> s.getAge() > 20;
@@ -19,17 +28,19 @@ public class AllMatchAnyMatchMethodExample2 {
 
 		List<Student> list = Student.getListOfStudents();
 		
-		System.out.println(list.stream().allMatch(predicate3));
+		Stream<Student> s1 = list.stream();
 		
-		System.out.println(list.stream().anyMatch(predicate3));
+		System.out.println(list.stream().allMatch(predicate3)); //false
 		
-		System.out.println(list.stream().noneMatch(predicate3));
+		System.out.println(list.stream().anyMatch(predicate3)); //false
 		
-		System.out.println(list.stream().noneMatch(predicate));
+		System.out.println(list.stream().noneMatch(predicate3)); // true
 		
-		System.out.println(list.stream().noneMatch(predicate2));
+		System.out.println(list.stream().noneMatch(s ->s.getAge() > 20)); // false
 		
-		System.out.println(list.stream().noneMatch(predicate4));
+		System.out.println(list.stream().noneMatch(predicate2)); //true
+		
+		System.out.println(list.stream().noneMatch(predicate4)); //false
 
 	}
 }
