@@ -6,12 +6,19 @@ import java.util.function.BiConsumer;
 
 import streamMethods.Student;
 
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class ForEachMethodExample4 {
 
 	// For Map use BiConsumer
-	static BiConsumer<Integer, Student> consumer = (k ,v) -> {
-		System.out.println(k+ " "+ v.getName()+" "+ v.getAge());
-	};
+	static BiConsumer<Integer, Student> consumer = (k ,v) -> System.out.println(k+ " "+ v.getName()+" "+ v.getAge());
+
 	
 	static BiConsumer<Integer, Student> consumer1 = (k ,v) -> {
 		if(v.getName().equalsIgnoreCase("Test1")) {
@@ -32,6 +39,9 @@ public class ForEachMethodExample4 {
 		
 		map.forEach(consumer);
 		
+		System.out.println("------");
+		map.forEach(consumer1);
+		System.out.println("------");
 		map.forEach(student::printDeatils);
 	}
 }

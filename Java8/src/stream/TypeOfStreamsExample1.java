@@ -12,21 +12,21 @@ public class TypeOfStreamsExample1 {
 
 		IntStream intStream = IntStream.of(10, 20, 30, 40);
 
-		LongStream longStream = LongStream.of(100, 200, 300);
+		LongStream longStream = LongStream.of(100l, 200l, 300l);
 
 		DoubleStream doubleStream = DoubleStream.of(100.52, 200.55, 300.66);
+		
 
 		Stream<String> stream = Stream.of(null, "AA");
 		
 		Stream<Integer> intstream = Stream.of(10,30,40,50);
 
 		Stream<String> stream1 = Stream.of(new String[] { "test1" });
+		
 
 		Stream<String[]> stream2 = Stream.of(new String[][] { { "test1" }, { "test2" } });
 
 		Stream<String[]> stream3 = Stream.of(new String[][] { { "A", "Apple" }, { "M", "Mango" }, { "B", "Banana" } });
-		
-		String s1 = " ";
 		
 
 

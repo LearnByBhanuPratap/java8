@@ -1,7 +1,8 @@
-package streamMethods.findAny7;
+package streamMethods.forEachOrdered17;
 
 import java.util.Arrays;
 import java.util.List;
+
 /**
  * https://www.youtube.com/user/MrBhanupratap29/playlists?
  * https://www.udemy.com/javabybhanu
@@ -10,15 +11,17 @@ import java.util.List;
  * @author Bhanu Pratap Singh
  *
  */
-public class FindAnyMethodExample3 {
+public class Example1 {
 
 	public static void main(String[] args) {
 		
-		List<Integer> numList = Arrays.asList(201, 202, 203, 204);
+		List<Integer> list = Arrays.asList(2, 4, 6, 8, 10);
+
+		list.stream().parallel().forEach(System.out::println); 
+
+		System.out.println("-------");
 		
-		numList.stream().filter(n -> n % 2 == 0)
-		
-		.findAny().ifPresent(e -> System.out.println(e));
+		list.stream().parallel().forEachOrdered(System.out::println);
 	}
 
 }

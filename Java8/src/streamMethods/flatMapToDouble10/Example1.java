@@ -19,10 +19,12 @@ public class Example1 {
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
 		list.add(list1);
 		list.add(list2);
+		
+		System.out.println(list);
+
 
 		DoubleStream newData = list.stream().flatMapToDouble(x -> x.stream().mapToDouble(doubleFunction));
 		
-		System.out.println(list);
 		
 		newData.forEach(x ->System.out.println(x));
 

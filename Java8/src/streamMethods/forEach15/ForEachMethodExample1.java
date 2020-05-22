@@ -3,6 +3,14 @@ package streamMethods.forEach15;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class ForEachMethodExample1 {
 
 	public static void main(String[] args) {

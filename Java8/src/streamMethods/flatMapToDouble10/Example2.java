@@ -10,7 +10,10 @@ public class Example2 {
 
 		List<String> list = Arrays.asList("4.5", "7.7", "9", "90", "50.6");
 
+		DoubleStream doubleStream = DoubleStream.of(70.98, 80.65, Double.parseDouble("90.8776"));
+
 		DoubleStream newData = list.stream().flatMapToDouble(a -> DoubleStream.of(Double.parseDouble(a)));
+
 		newData.forEach(System.out::println);
 
 	}

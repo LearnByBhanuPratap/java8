@@ -1,6 +1,5 @@
 package streamMethods.flatMap9;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -19,6 +18,7 @@ public class Example2 {
 				Stream.of(new String[][] { { "P", "Papaya" }, { "C", "Coconut" }, { "O", "Orange" } });
 		
 		Stream<Stream<String[]>> data3 = Stream.of(data,data2);
+		
 		
 		data3.forEach(x->{
 			x.forEach(y ->{

@@ -6,9 +6,17 @@ import java.util.function.Consumer;
 
 import streamMethods.Student;
 
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class ForEachMethodExample3 {
 
-	static Consumer<Student> consumer = (Student s) -> {
+	static Consumer<Student> consumer = s -> {
 		if (s.getAge() == 10) {
 			System.out.print(s.getName() + " ");
 		}
@@ -24,12 +32,15 @@ public class ForEachMethodExample3 {
 		list.add(new Student("Test3", 30));
 
 		list.forEach(consumer);
+		
 		System.out.println("-------");
 		
 		list.forEach(Student::getName);
+		
 		System.out.println("-------");
 		
 		list.forEach(student::printDeatils);
+		
 		System.out.println("-------");
 		
 		list.forEach(Student::printDeatils);

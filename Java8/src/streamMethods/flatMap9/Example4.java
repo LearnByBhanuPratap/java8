@@ -14,11 +14,13 @@ public class Example4 {
 		Stream<Integer> newList = list1.stream();
 
 		// it will throw exception
-		newList.forEach(x -> System.out.println(x));
+		//newList.forEach(x -> System.out.println(x));
 
-		newList.forEach(x -> System.out.println(x));
+		//newList.forEach(x -> System.out.println(x));
 
 		List<Integer> list2 = Arrays.asList(20, 11, 28, 54, 51);
+		
+		//Stream<Integer> stream = list2.stream();
 
 		Supplier<Stream<Integer>> supplier = () -> list2.stream();
 

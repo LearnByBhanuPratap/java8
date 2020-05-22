@@ -37,7 +37,7 @@ public class Student {
 	}
 
 	public void printDeatils(int id, Student student) {
-		System.out.println("key=" + id + "name=" + student.getName() + " age=" + student.getAge());
+		System.out.println("key=" + id + " name=" + student.getName() + " age=" + student.getAge());
 	}
 
 	public void printDeatils() {

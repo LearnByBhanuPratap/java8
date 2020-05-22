@@ -9,9 +9,9 @@ public class Example3 {
 
 		Stream<String> stringStream = Stream.of("A", "B", "C", "D");
 
-		stringStream.forEach(a -> System.out.println(a));
+		//stringStream.forEach(a -> System.out.println(a));
 
-		stringStream.forEach(a -> System.out.println(a));
+		//stringStream.forEach(a -> System.out.println(a));
 
 		Supplier<Stream<String>> streamSupplier = () -> Stream.of("A", "B", "C", "D");
 		
