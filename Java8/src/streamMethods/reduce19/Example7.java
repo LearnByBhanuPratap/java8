@@ -5,6 +5,14 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class Example7 {
 	
 	/*
@@ -35,8 +43,9 @@ public class Example7 {
 		
 		System.out.println(res1);
 		
-		System.out.println(binaryOperator.apply(3, 2));
+		//System.out.println(binaryOperator.apply(3, 2));
 		
+		System.out.println("-----");
 		list2.parallelStream().forEach(x -> System.out.println(x));
 		
 		System.out.println("----");

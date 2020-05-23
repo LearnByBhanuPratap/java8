@@ -1,17 +1,21 @@
 package streamMethods.reduce19;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
-import java.util.function.BinaryOperator;
-import java.util.stream.Collectors;
-
-import streamMethods.Student;
-
+import java.util.function.BiFunction;
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class Example1 {
 
+	BiFunction<String, String, String> biFunction = (a,b) -> a.concat(b);
+	
 	public static void main(String[] args) {
 
 		List<String> words = Arrays.asList("AAAAA", "BB", "CC", "DD", "EE");

@@ -1,9 +1,16 @@
 package streamMethods.reduce19;
 
 import java.util.List;
-import java.util.Optional;
 import streamMethods.Student;
 
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class Example4 {
 
 	public static void main(String[] args) {

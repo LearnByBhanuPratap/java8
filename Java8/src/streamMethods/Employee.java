@@ -40,6 +40,12 @@ public class Employee implements Comparable<Employee>{
 
 	public Employee() {
 	}
+	
+	public Employee(int id, String name, int age) {
+		this.name = name;
+		this.age = age;
+		this.id = id;
+	}
 
 	public void printDeatils(Employee student) {
 		System.out.println("name=" + student.getName() + " age" + student.getAge());

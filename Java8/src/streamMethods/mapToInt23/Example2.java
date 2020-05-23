@@ -1,25 +1,29 @@
-package streamMethods.limit20;
+package streamMethods.mapToInt23;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import streamMethods.Student;
 
-/**
- * https://www.youtube.com/user/MrBhanupratap29/playlists?
- * https://www.udemy.com/javabybhanu
- * https://www.facebook.com/learnbybhanupratap/
- * 
- * @author Bhanu Pratap Singh
- *
- */
 public class Example2 {
 
 	public static void main(String[] args) {
 		
 		List<Student> list = Student.getListOfStudents();
 
-		list.stream().limit(3).forEach(x ->System.out.println(x.getName()+" "+x.getAge()));
+		IntStream newList = list.stream().mapToInt(x -> x.getAge());
+		
+		//System.out.println(newList.boxed().collect(Collectors.toList()));
+
+		Map<Integer, Long> newData = newList.boxed()
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+		newData.forEach((k,v) -> System.out.println(k+" "+v));
+
 	}
 	
 	public static List<Student> getListOfStudents() {
@@ -33,4 +37,6 @@ public class Example2 {
 		list.add(new Student("Test4", 10));
 		return list;
 	}
+	
+
 }

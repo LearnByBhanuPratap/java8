@@ -8,16 +8,24 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import streamMethods.Employee;
-
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class SortedMethodExample4 {
 
 	public static void main(String[] args) {
 
 		Set<Employee> set = new HashSet<Employee>();
+		
 		set.add(new Employee("AA", 11));
 		set.add(new Employee("CC", 15));
-		set.add(new Employee("DD", 9));
-		set.add(new Employee("BB", 9));
+		set.add(new Employee("DD", 7));
+		set.add(new Employee("BB", 7));
 
 		Function<Employee, String> function2 = a -> a.getName();
 		Function<Employee, Integer> function3 = a -> a.getAge();
@@ -49,7 +57,7 @@ public class SortedMethodExample4 {
 		Set<Employee> set45 = set.stream().sorted()
 				.collect(Collectors.toSet());
 		
-		System.out.println(set45);
+		set45.forEach(x -> System.out.println(x.getAge()+" "+x.getName()));
 	}
 
 }
