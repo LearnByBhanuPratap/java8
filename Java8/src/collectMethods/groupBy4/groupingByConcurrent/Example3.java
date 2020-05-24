@@ -3,6 +3,7 @@ package collectMethods.groupBy4.groupingByConcurrent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -21,8 +22,8 @@ public class Example3 {
 		list.add("Orange");
 		list.add("Orange");
 
-		Map<String, Long> output = list.stream()
-				.collect(Collectors.groupingByConcurrent(Function.identity(), Collectors.counting()));
+		ConcurrentMap<Object, Long> output = list.stream()
+				.collect(Collectors.groupingByConcurrent(x ->x, Collectors.counting()));
 
 		System.out.println(output);
 

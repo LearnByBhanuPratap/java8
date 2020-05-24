@@ -28,7 +28,9 @@ public class Example1 {
 		list.add("Orange");
 		list.add("Orange");
 
-		Map<Object, List<String>> output1 = list.stream()
+
+		
+		Map<Object, List<String>> output1 = list.stream() // Stream<STring>
 				.collect(Collectors.groupingBy(x ->x.length()));
 
 		System.out.println(output1);
@@ -41,3 +43,6 @@ public class Example1 {
 	}
 
 }
+//Output
+// {5=[Apple, Apple], 6=[Papaya, Banana, Orange, Orange, Orange]}
+// {false=[Apple, Apple, Papaya, Banana], true=[Orange, Orange, Orange]}

@@ -19,6 +19,9 @@ public class Example3 {
 	 * because each video required previous concept
 	 */
 	public static void main(String[] args) {
+		
+		Function<String, String> function = (a) ->a;
+		
 		List<String> list = new ArrayList<String>();
 		list.add("Apple");
 		list.add("Apple");
@@ -29,7 +32,7 @@ public class Example3 {
 		list.add("Orange");
 
 		Map<String, Long> output = list.stream()
-				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+				.collect(Collectors.groupingBy(function, Collectors.counting()));
 
 		System.out.println(output);
 

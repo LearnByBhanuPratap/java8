@@ -3,6 +3,7 @@ package collectMethods.groupBy4.reducing;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 import streamMethods.Student;
@@ -14,10 +15,12 @@ public class Example2 {
 	 * understand because each video required previous concept
 	 */
 	public static void main(String[] args) {
+		
+
 
 		List<Student> list = Student.getListOfStudents();
 
-		Optional<Student> output = list.stream()
+		Optional<Student> output = list.stream() // Stream<Student>
 				.collect(Collectors.reducing((a, b) -> a.getAge() > b.getAge() ? a : b));
 		
 		System.out.println(output.get().getAge());

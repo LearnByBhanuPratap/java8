@@ -23,11 +23,12 @@ public class Example5 {
 	 * because each video required previous concept
 	 */
 	public static void main(String[] args) {
+		
 		List<Student> list = Student.getListOfStudents();
 	
 
-		Map<Object, Long> output = list.stream()
-				.collect(Collectors.groupingBy((a) ->a.getName(), Collectors.counting()));
+		Map<String, Long> output = list.stream() // Stream<STudent>
+				.collect(Collectors.groupingBy(a ->a.getName(), Collectors.counting()));
 
 		System.out.println(output);
 

@@ -30,11 +30,11 @@ public class Example1 {
 		list.add("Orange");
 
 		// java.util.stream.Collectors;
-		Map<Object, List<String>> output1 = list.stream().collect(Collectors.groupingByConcurrent(x -> x));
+		Map<Object, List<String>> output1 = list.stream().collect(Collectors.groupingByConcurrent(x->x));
 
 		System.out.println(output1);
 
-		Map<Object, List<String>> output2 = list.stream().collect(Collectors.groupingBy(x -> x.contains("O")));
+		Map<Object, List<String>> output2 = list.stream().collect(Collectors.groupingByConcurrent(x -> x.contains("O")));
 
 		System.out.println(output2);
 	}

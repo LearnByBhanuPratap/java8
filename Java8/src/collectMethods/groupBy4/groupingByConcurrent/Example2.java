@@ -12,12 +12,16 @@ public class Example2 {
 	 * because each video required previous concept
 	 */
 	public static void main(String[] args) {
+		
+		Function<Double, Double> function = a -> a;
+		
 		List<Double> list = new ArrayList<Double>();
 		for (int i = 0; i < 10; i++) {
 			list.add(Double.valueOf(i));
+			list.add(Double.valueOf(i));
 		}
 		
-		Map<Double, Long> output = list.stream().collect(Collectors.groupingByConcurrent(Function.identity(),Collectors.counting()));
+		Map<Double, Long> output = list.stream().collect(Collectors.groupingByConcurrent(x ->x,Collectors.counting()));
 		
 		System.out.println(output);
 	}

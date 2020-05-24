@@ -22,6 +22,7 @@ public class Example2 {
 		List<Double> list = new ArrayList<Double>();
 		for (int i = 0; i < 10; i++) {
 			list.add(Double.valueOf(i));
+			list.add(Double.valueOf(i));
 		}
 		
 		Map<Double, Long> output = list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));

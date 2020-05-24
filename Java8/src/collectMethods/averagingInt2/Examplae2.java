@@ -15,6 +15,7 @@ public class Examplae2 {
 	public static void main(String[] args) {
 
 		Double output = getListOfStudents().stream().collect(Collectors.averagingInt(x ->x.getAge()));
+		
 		System.out.println(output.intValue());
 	}
 

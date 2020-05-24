@@ -15,17 +15,19 @@ public class Example3 {
 	 */
 	public static void main(String[] args) {
 
-		Function<Student, Integer> function = (a) -> a.getAge();
+		Function<Student, Integer> function = a -> a.getAge();
 
 		BinaryOperator<Integer> binaryOperator = (a, b) -> a * b;
 
 		List<Student> list = Student.getListOfStudents();
 
 		Integer output = list.stream().collect(Collectors.reducing(3, Student::getAge, Integer::sum));
+		
+		//list.stream().collect(Collectors.reducing(3, x -> x.getAge(), (x,y) -> x+y));
 
 		System.out.println(output);
 
-		Integer output1 = list.stream().collect(Collectors.reducing(3, (a) -> a.getAge(), (x, y) -> x + y));
+		Integer output1 = list.stream().collect(Collectors.reducing(3, a -> a.getAge(), (x, y) -> x-y));
 
 		System.out.println(output1);
 

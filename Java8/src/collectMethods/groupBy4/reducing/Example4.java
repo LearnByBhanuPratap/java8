@@ -11,7 +11,8 @@ public class Example4 {
 	public static void main(String[] args) {
 
 		Stream<Integer> s = Stream.of(5, 10, 20, 50);
-		Integer i = s.collect(Collectors.reducing(1, (integer, integer2) -> integer2 * integer));
+		
+		Integer i = s.collect(Collectors.reducing(1, (a, b) -> a * b));
 		System.out.println(i);
 
 	}

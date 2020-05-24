@@ -2,6 +2,7 @@ package collectMethods.averagingLong3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Example1 {
@@ -17,6 +18,7 @@ public class Example1 {
 			list.add(Long.valueOf(i));
 		}
 		
+		Function<Long, Long> function = a -> a;
 		Double output = list.stream().collect(Collectors.averagingLong(x ->x));
 		
 		System.out.println(output.longValue());

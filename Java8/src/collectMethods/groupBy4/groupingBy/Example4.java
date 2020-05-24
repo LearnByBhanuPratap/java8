@@ -17,17 +17,18 @@ import streamMethods.Student;
  */
 public class Example4 {
 
-	static Function<Student, Integer> function = (a) ->a.getAge();
+	static Function<Student, Integer> function = a ->a.getAge();
 	/**
 	 * Important Note: Please watch video in sequence otherwise you will not understand
 	 * because each video required previous concept
 	 */
 	public static void main(String[] args) {
+		
 		List<Student> list = Student.getListOfStudents();
 	
 
 		Map<Integer, Long> output = list.stream()
-				.collect(Collectors.groupingBy((a) ->a.getAge(), Collectors.counting()));
+				.collect(Collectors.groupingBy(a ->a.getAge(), Collectors.counting()));
 
 		System.out.println(output);
 

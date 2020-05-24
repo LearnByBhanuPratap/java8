@@ -17,8 +17,8 @@ public class Example8 {
 
 		List<Student> items = getListOfStudents();
 
-		Map<String, List<Student>> counting = items.stream()
-				.collect(Collectors.groupingBy(Student::getName));
+		Map<Object, List<Student>> counting = items.stream()
+				.collect(Collectors.groupingBy(x -> x.getName()));
 
 		System.out.println(counting);
 
@@ -38,6 +38,7 @@ public class Example8 {
 		list.add(new Student("Test4", 10));
 		list.add(new Student("Test4", 9));
 		list.add(new Student("Test4", 7));
+		list.add(new Student("Test4", 7));
 		return list;
 	}
 	
@@ -50,6 +51,7 @@ public class Example8 {
 		list.add(new Student("Test4", 10));
 		list.add(new Student("Test4", 10));
 		list.add(new Student("Test4", 10));
+		list.add(new Student("Test2", 10));
 		return list;
 	}
 

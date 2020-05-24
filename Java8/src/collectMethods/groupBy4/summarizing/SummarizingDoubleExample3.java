@@ -4,7 +4,14 @@ import java.util.ArrayList;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
-
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class SummarizingDoubleExample3 {
 	/**
 	 * Important Note: Please watch video in sequence otherwise you will not
@@ -23,6 +30,7 @@ public class SummarizingDoubleExample3 {
 		DoubleSummaryStatistics output1 = list.stream().collect(Collectors.summarizingDouble((x -> x.length())));
 
 		System.out.println(output1);
+		
 		System.out.println(output1.getAverage());
 		System.out.println(output1.getMax());
 		System.out.println(output1.getSum());

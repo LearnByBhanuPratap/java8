@@ -31,7 +31,7 @@ public class Example7 {
 		System.out.println("--------");
 		
 		Map<String, Integer> sum = items.stream()
-				.collect(Collectors.groupingBy(Student::getName, Collectors.summingInt(Student::getAge)));
+				.collect(Collectors.groupingBy(Student::getName, Collectors.summingInt(x -> x.getAge())));
 
 		System.out.println(sum);
 	}
