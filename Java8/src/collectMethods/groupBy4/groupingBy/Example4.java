@@ -1,4 +1,4 @@
-package collectMethods.groupBy5;
+package collectMethods.groupBy4.groupingBy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import streamMethods.Student;
-
+/**
+ * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class Example4 {
 
 	static Function<Student, Integer> function = (a) ->a.getAge();
@@ -20,7 +27,7 @@ public class Example4 {
 	
 
 		Map<Integer, Long> output = list.stream()
-				.collect(Collectors.groupingByConcurrent((a) ->a.getAge(), Collectors.counting()));
+				.collect(Collectors.groupingBy((a) ->a.getAge(), Collectors.counting()));
 
 		System.out.println(output);
 

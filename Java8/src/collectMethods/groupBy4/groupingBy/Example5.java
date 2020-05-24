@@ -1,4 +1,4 @@
-package collectMethods.groupBy4;
+package collectMethods.groupBy4.groupingBy;
 
 import java.util.ArrayList;
 import java.util.List;

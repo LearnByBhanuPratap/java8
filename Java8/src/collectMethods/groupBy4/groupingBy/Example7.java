@@ -1,9 +1,8 @@
-package collectMethods.groupBy4;
+package collectMethods.groupBy4.groupingBy;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import streamMethods.Student;
@@ -15,24 +14,28 @@ import streamMethods.Student;
  * @author Bhanu Pratap Singh
  *
  */
-public class Example4 {
-
-	static Function<Student, Integer> function = (a) ->a.getAge();
+public class Example7 {
 	/**
 	 * Important Note: Please watch video in sequence otherwise you will not understand
 	 * because each video required previous concept
 	 */
 	public static void main(String[] args) {
-		List<Student> list = Student.getListOfStudents();
-	
 
-		Map<Integer, Long> output = list.stream()
-				.collect(Collectors.groupingBy((a) ->a.getAge(), Collectors.counting()));
+		List<Student> items = getListOfStudents();
 
-		System.out.println(output);
+		Map<String, Long> counting = items.stream()
+				.collect(Collectors.groupingBy(Student::getName, Collectors.counting()));
 
+		System.out.println(counting);
+
+		System.out.println("--------");
+		
+		Map<String, Integer> sum = items.stream()
+				.collect(Collectors.groupingBy(Student::getName, Collectors.summingInt(Student::getAge)));
+
+		System.out.println(sum);
 	}
-	
+
 	public static List<Student> getListOfStudents() {
 		List<Student> list = new ArrayList<Student>();
 		list.add(new Student("Test1", 40));
@@ -44,6 +47,5 @@ public class Example4 {
 		list.add(new Student("Test4", 10));
 		return list;
 	}
-
 
 }

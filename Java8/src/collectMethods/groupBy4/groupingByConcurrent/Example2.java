@@ -1,18 +1,11 @@
-package collectMethods.groupBy4;
+package collectMethods.groupBy4.groupingByConcurrent;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-/**
- * https://www.youtube.com/user/MrBhanupratap29/playlists?
- * https://www.udemy.com/javabybhanu
- * https://www.facebook.com/learnbybhanupratap/
- * 
- * @author Bhanu Pratap Singh
- *
- */
+
 public class Example2 {
 	/**
 	 * Important Note: Please watch video in sequence otherwise you will not understand
@@ -24,7 +17,7 @@ public class Example2 {
 			list.add(Double.valueOf(i));
 		}
 		
-		Map<Double, Long> output = list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		Map<Double, Long> output = list.stream().collect(Collectors.groupingByConcurrent(Function.identity(),Collectors.counting()));
 		
 		System.out.println(output);
 	}

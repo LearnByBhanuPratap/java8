@@ -1,4 +1,4 @@
-package collectMethods.groupBy4;
+package collectMethods.groupBy4.groupingBy;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;
