@@ -3,7 +3,10 @@ package doubleSupplier;
 import java.util.function.DoubleSupplier;
 
 public class Example1 {
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	public static void main(String[] args) {
 		DoubleSupplier doubleSupplier = () -> Double.parseDouble("345.456");
 

@@ -4,7 +4,10 @@ import java.util.function.DoubleToIntFunction;
 import java.util.function.DoubleToLongFunction;
 
 public class DoubleToIntFunctionExample {
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	static DoubleToIntFunction doubleToIntFunction = a -> (int) a;
 
 	static DoubleToIntFunction doubleToIntFunction1 = (a) -> {

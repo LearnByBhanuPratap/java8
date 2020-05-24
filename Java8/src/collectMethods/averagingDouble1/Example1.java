@@ -1,7 +1,8 @@
-package biPredicate;
+package collectMethods.averagingDouble1;
 
-import java.util.function.BiPredicate;
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 /**
  * https://www.youtube.com/user/MrBhanupratap29/playlists?
  * https://www.udemy.com/javabybhanu
@@ -11,19 +12,20 @@ import java.util.function.BiPredicate;
  *
  */
 public class Example1 {
-
-	static BiPredicate<String, Integer> biPredicate = (a, b) -> {
-		return a.length() == b;
-	};
-
 	/**
 	 * Important Note: Please watch video in sequence otherwise you will not understand
 	 * because each video required previous concept
 	 */
 	public static void main(String[] args) {
-		System.out.println(biPredicate.test("hellojava8", 10));
-		System.out.println(biPredicate.test("hellojava8", 9));
-
+		
+		List<Double> list = new ArrayList<Double>();
+		for (int i = 0; i < 10; i++) {
+			list.add(Double.valueOf(i));
+		}
+		
+		Double output = list.stream().collect(Collectors.averagingDouble(x ->x));
+		
+		System.out.println(output);
 	}
 
 }

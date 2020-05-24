@@ -24,6 +24,10 @@ public class AllMatchAnyMatchMethodExample2 {
 	
 	static Predicate<Student> predicate4 = e -> e.getAge() < 20 && e.getName().startsWith("T");
 
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	public static void main(String[] args) {
 
 		List<Student> list = Student.getListOfStudents();

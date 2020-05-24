@@ -16,7 +16,10 @@ import streamMethods.Student;
 public class AllMatchAnyMatchMethodExample1 {
 
 	static Predicate<Student> predicate = s -> s.getAge() > 20;
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	public static void main(String[] args) {
 
 		List<Student> list = new ArrayList<>();

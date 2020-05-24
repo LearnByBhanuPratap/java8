@@ -4,7 +4,10 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class Example1 {
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	static BiFunction<Integer, Integer, Integer> addFunction = (num1, num2) -> (num1 + num2);
 
 	static Function<Integer, Integer> multipleFunction = (num1) -> (num1 * 5);

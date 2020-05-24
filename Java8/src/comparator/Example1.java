@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+
 /**
  * https://www.youtube.com/user/MrBhanupratap29/playlists?
  * https://www.udemy.com/javabybhanu
@@ -23,7 +24,10 @@ public class Example1 {
 			return o1.getFirstName().compareTo(o2.getFirstName());
 		}
 	};
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	static Comparator<Person> nameComparator = (Person o1, Person o2) -> o1.getFirstName().compareTo(o2.getFirstName());
 
 	static Comparator<Person> nameComparator1 = (o1, o2) -> o1.getFirstName().compareTo(o2.getFirstName());

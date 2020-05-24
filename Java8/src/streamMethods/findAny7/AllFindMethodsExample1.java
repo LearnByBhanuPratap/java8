@@ -28,8 +28,6 @@ public class AllFindMethodsExample1 {
 
 	public static void main(String[] args) {
 		
-		
-		
 		Consumer<String> consumer = s -> System.out.println(s);
 
 		List<String> list = Arrays.asList("AA", "BB", "CC");

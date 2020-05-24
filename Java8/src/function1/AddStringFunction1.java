@@ -3,7 +3,10 @@ package function1;
 import java.util.function.Function;
 
 public class AddStringFunction1 {
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	static Function<String, String> addString = (name) -> name.toUpperCase().concat("Ram");
 
 	static Function<String, Integer> addString1 = (name) -> name.length();

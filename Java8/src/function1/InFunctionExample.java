@@ -4,7 +4,10 @@ import java.util.function.IntFunction;
 import java.util.function.IntToDoubleFunction;
 
 public class InFunctionExample {
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	static IntFunction<Double> function = a -> a * 9.987;
 
 	static IntFunction<Double> function1 = a -> (double) a * 9;

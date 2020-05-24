@@ -13,7 +13,10 @@ import java.util.Comparator;
  *
  */
 public class Example4 {
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	static Comparator<Person1> ComparatorByFirstName = Comparator.comparing(Person1::getFirstName);
 
 	static Comparator<Person1> comparatorByLastname = Comparator.comparing(Person1::getFirstName);

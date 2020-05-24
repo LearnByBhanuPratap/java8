@@ -13,7 +13,10 @@ import java.util.function.BiPredicate;
 public class Example3 {
 	
 
-
+	/**
+	 * Important Note: Please watch video in sequence otherwise you will not understand
+	 * because each video required previous concept
+	 */
 	public static void main(String[] args) {
 		BiPredicate<Integer, String> conditions = (a, b) -> a > 30 && b.startsWith("R");
 		BiPredicate<Integer, String> conditions1 = (a, b) -> a < 30 && b.startsWith("T");
