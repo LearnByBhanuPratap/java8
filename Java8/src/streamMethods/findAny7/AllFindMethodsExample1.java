@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import streamMethods.Student;
 
 /**
- * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.youtube.com/c/learnbybhanu
  * https://www.udemy.com/javabybhanu
  * https://www.facebook.com/learnbybhanupratap/
  * 

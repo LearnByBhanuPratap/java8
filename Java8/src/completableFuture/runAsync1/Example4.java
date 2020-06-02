@@ -2,7 +2,14 @@ package completableFuture.runAsync1;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
-
+/**
+ * https://www.youtube.com/c/learnbybhanu
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class Example4 {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -20,7 +27,7 @@ public class Example4 {
 		
 		cf = cf.thenRunAsync(() -> performTask_3("third task"));
 
-		((CompletableFuture<Void>) cf).join();
+		cf.join();
 
 		System.out.println("main exiting");
 	}
@@ -29,7 +36,7 @@ public class Example4 {
 
 		System.out.printf("task: %s, thread: %s%n", task, Thread.currentThread().getName());
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -39,7 +46,7 @@ public class Example4 {
 
 		System.out.printf("task: %s, thread: %s%n", task, Thread.currentThread().getName());
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -49,7 +56,7 @@ public class Example4 {
 
 		System.out.printf("task: %s, thread: %s%n", task, Thread.currentThread().getName());
 		try {
-			Thread.sleep(900);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

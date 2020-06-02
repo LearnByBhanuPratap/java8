@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.BiPredicate;
 
 /**
- * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.youtube.com/c/learnbybhanu
  * https://www.udemy.com/javabybhanu
  * https://www.facebook.com/learnbybhanupratap/
  * 

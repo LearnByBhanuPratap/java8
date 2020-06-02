@@ -3,7 +3,7 @@ package streamMethods.isParallel16;
 import java.util.stream.Stream;
 
 /**
- * https://www.youtube.com/user/MrBhanupratap29/playlists?
+ * https://www.youtube.com/c/learnbybhanu
  * https://www.udemy.com/javabybhanu
  * https://www.facebook.com/learnbybhanupratap/
  * 

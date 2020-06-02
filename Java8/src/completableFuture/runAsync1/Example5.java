@@ -4,7 +4,14 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+/**
+ * https://www.youtube.com/c/learnbybhanu
+ * https://www.udemy.com/javabybhanu
+ * https://www.facebook.com/learnbybhanupratap/
+ * 
+ * @author Bhanu Pratap Singh
+ *
+ */
 public class Example5 {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -21,7 +28,7 @@ public class Example5 {
 		
 		cf = cf.thenRunAsync(() -> performTask_3("fourth task"),executor);
 
-		((CompletableFuture<Void>) cf).join();
+		 cf.join();
 
 		System.out.println("main exiting");
 	}
@@ -30,7 +37,7 @@ public class Example5 {
 
 		System.out.printf("task: %s, thread: %s%n", task, Thread.currentThread().getName());
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -40,7 +47,7 @@ public class Example5 {
 
 		System.out.printf("task: %s, thread: %s%n", task, Thread.currentThread().getName());
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -50,7 +57,7 @@ public class Example5 {
 
 		System.out.printf("task: %s, thread: %s%n", task, Thread.currentThread().getName());
 		try {
-			Thread.sleep(900);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

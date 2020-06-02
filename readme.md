@@ -5,7 +5,7 @@ I have 10 years of IT experience in various tools and technology.
 I have started my carrier as software tester and later I moved to development engineer.
 
 My YouTube Channel
-https://www.youtube.com/user/MrBhanupratap29/playlists?
+https://www.youtube.com/c/learnbybhanu
 
 Udemy site
 https://www.udemy.com/javabybhanu

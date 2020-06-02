@@ -9,7 +9,7 @@ public class Example8 {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		
-		ExecutorService executor = Executors.newFixedThreadPool(2);
+		ExecutorService executor = Executors.newFixedThreadPool(3);
 		
 		System.out.println("I am main thread");
 
