@@ -2,14 +2,11 @@ Hello Guys My self "Bhanu Pratap Singh" I come from Muzaffarpur Bihar, I have do
 
 I have 10 years of IT experience in various tools and technology.
 
-I have started my carrier as software tester and later I moved to development engineer.
+I have started my career as software tester and later I moved to development engineer.
 
-My YouTube Channel
-https://www.youtube.com/c/learnbybhanu
+My YouTube Channel https://www.youtube.com/c/learnbybhanu
 
-Udemy site
-https://www.udemy.com/javabybhanu
+Udemy site https://www.udemy.com/javabybhanu
 
-Facebook Page
-https://www.facebook.com/learnbybhanupratap/
+Facebook Page https://www.facebook.com/learnbybhanupratap/
 
